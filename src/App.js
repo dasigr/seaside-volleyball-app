@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Advertisement from './components/advertisement/Advertisement';
+import LatestNews from './components/latest-news/LatestNews';
+import UpcomingEvents from './components/upcoming-events/UpcomingEvents';
+import TeamStandings from './components/team-standings/TeamStandings';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="page">
+    <Header></Header>
+    <section className="main">
+      <Advertisement></Advertisement>
+      <LatestNews></LatestNews>
+      <UpcomingEvents></UpcomingEvents>
+      <TeamStandings></TeamStandings>
+      <Advertisement></Advertisement>
+    </section>
+    <Footer></Footer>
+  </div>
+);
 
 export default App;
