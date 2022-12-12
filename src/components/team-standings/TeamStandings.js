@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 
 import imageUrl from './volleyball.jpeg';
 
@@ -15,6 +16,7 @@ const TeamStandings = () => {
                 <div class="card-img-overlay d-flex align-items-end">
                   <div className="card-content">
                     <h5 class="card-title">2nd Place</h5>
+                    <Link to="/article/card-title" class="overlay-link">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -25,6 +27,7 @@ const TeamStandings = () => {
                 <div class="card-img-overlay d-flex align-items-end">
                   <div className="card-content">
                     <h5 class="card-title">1st Place</h5>
+                    <Link to="/article/card-title" class="overlay-link">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -35,6 +38,7 @@ const TeamStandings = () => {
                 <div class="card-img-overlay d-flex align-items-end">
                   <div className="card-content">
                     <h5 class="card-title">3rd Place</h5>
+                    <Link to="/article/card-title" class="overlay-link">Read more</Link>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,22 +10,22 @@ const Footer = () => {
             <div class="col-6 col-md-3 mb-3">
               <h5>Seaside Volleyball</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Video</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Schedule</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Standings</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Players</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teams</a></li>
+                <li class="nav-item mb-2"><Link to="/video" class="nav-link p-0 text-muted">Video</Link></li>
+                <li class="nav-item mb-2"><Link to="/schedule" class="nav-link p-0 text-muted">Schedule</Link></li>
+                <li class="nav-item mb-2"><Link to="/standings" class="nav-link p-0 text-muted">Standings</Link></li>
+                <li class="nav-item mb-2"><Link to="/players" class="nav-link p-0 text-muted">Players</Link></li>
+                <li class="nav-item mb-2"><Link to="/teams" class="nav-link p-0 text-muted">Teams</Link></li>
               </ul>
             </div>
     
             <div class="col-6 col-md-3 mb-3">
               <h5>Sponsors</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boss</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Madame</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Amo</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Konsehal</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agawn</a></li>
+                <li class="nav-item mb-2"><Link to="/sponsors/boss" class="nav-link p-0 text-muted">Boss</Link></li>
+                <li class="nav-item mb-2"><Link to="/sponsors/madame" class="nav-link p-0 text-muted">Madame</Link></li>
+                <li class="nav-item mb-2"><Link to="/sponsors/amo" class="nav-link p-0 text-muted">Amo</Link></li>
+                <li class="nav-item mb-2"><Link to="/sponsors/konsehal" class="nav-link p-0 text-muted">Konsehal</Link></li>
+                <li class="nav-item mb-2"><Link to="/sponsors/agawn" class="nav-link p-0 text-muted">Agawn</Link></li>
               </ul>
             </div>
       
