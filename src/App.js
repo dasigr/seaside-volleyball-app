@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Video from './pages/Video';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -10,17 +14,18 @@ import TeamStandings from './components/team-standings/TeamStandings';
 import './App.css';
 
 const App = () => (
-  <div className="page">
-    <Header></Header>
-    <section className="main">
-      <Advertisement></Advertisement>
-      <LatestNews></LatestNews>
-      <UpcomingEvents></UpcomingEvents>
-      <TeamStandings></TeamStandings>
-      <Advertisement></Advertisement>
-    </section>
-    <Footer></Footer>
-  </div>
+  <Router>
+    <div className="page">
+      <Header></Header>
+      <section className="main">
+        <Routes>
+          <Route exact path='/' element={<Home></Home>} />
+          <Route path='/video' element={<Video ></Video>} />
+        </Routes>
+      </section>
+      <Footer></Footer>
+    </div>
+  </Router>
 );
 
 export default App;
