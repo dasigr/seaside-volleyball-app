@@ -52,3 +52,26 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+.overlay-link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
+  visibility: visible;
+  background: rgba(0,0,0,0);
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+
+.card-img {
+  opacity: 0.9;
+}
+
+.card:hover .card-img {
+  opacity: 1;
+}
