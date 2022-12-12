@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Video from './pages/Video';
+import SponsorDetail from './pages/SponsorDetail';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -16,7 +17,8 @@ const App = () => (
       <section className="main">
         <Routes>
           <Route exact path='/' element={<Home></Home>} />
-          <Route path='/video' element={<Video ></Video>} />
+          <Route path='/video' element={<Video></Video>} />
+          <Route path='/sponsors/:name' element={<SponsorDetail ></SponsorDetail>} />
         </Routes>
       </section>
       <Footer></Footer>
