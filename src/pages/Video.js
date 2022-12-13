@@ -1,10 +1,10 @@
 import Advertisement from '../components/advertisement/Advertisement';
-import ArticleList from '../components/article-list/ArticleList';
+import VideoList from '../components/video-list/VideoList';
 
 const Video = () => (
   <>
     <Advertisement></Advertisement>
-    <ArticleList></ArticleList>
+    <VideoList></VideoList>
     <Advertisement></Advertisement>
   </>
 );
